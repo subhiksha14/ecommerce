@@ -1,0 +1,13 @@
+ E-commerce command 
+backend  -- cd server
+            node index.js
+
+frontend  -- cd ecommerce-frontend
+             npm start
+
+
+admin  --  admin123   adminpass
+user   --  subhi      123
+
+
+subhi:subhi_db

@@ -1,0 +1,339 @@
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ /* background-image: url("https://img.freepik.com/free-photo/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg?semt=ais_hybrid&w=740"); */
+ background-color: #2c2a2aec;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffffec;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Headers */
+h1, h2 {
+  text-align: center;
+  color: #f0eded;
+  margin-bottom: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar .wishlist-icon {
+  font-size: 24px;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+/* Login/Signup Form */
+.auth-container {
+  background-color: #fff9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: rgb(248, 246, 246);
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+/* Product Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  max-width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-card p {
+  color: #444;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* Buttons Row */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Button Colors */
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+.add-btn:hover {
+  background-color: #218838;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+}
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.wishlist-btn {
+  background-color: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  max-width: 44px;
+  padding: 0;
+}
+.wishlist-btn:hover {
+  background-color: #ffe6ea;
+}
+
+/* Wishlist Page */
+.wishlist-page {
+  padding: 1rem;
+  background-color: #ffffffea;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.wishlist-page h2 {
+  text-align: center;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.wishlist-empty {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+/* LOGIN PAGE STYLING */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 10% auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form input {
+  margin-bottom: 1rem;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-msg {
+  color:red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.signup-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+.signup-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.signup-form input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 0.8rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
