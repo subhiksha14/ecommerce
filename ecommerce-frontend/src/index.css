@@ -1,18 +1,16 @@
-/* Base Reset */
+/* 🌈 Base Reset */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- /* background-image: url("https://img.freepik.com/free-photo/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg?semt=ais_hybrid&w=740"); */
- background-color: #2c2a2aec;
-
+  background-color: #2c2a2aec;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
 }
 
-/* App Container */
+/* 🌟 App Container */
 .app-container {
   padding: 2rem;
   max-width: 1200px;
@@ -22,14 +20,14 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Headers */
+/* 🏷️ Headers */
 h1, h2 {
   text-align: center;
   color: #f0eded;
   margin-bottom: 1.5rem;
 }
 
-/* Navbar */
+/* 🧭 Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -47,6 +45,12 @@ h1, h2 {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #9333ea;
+  transform: scale(1.05);
 }
 
 .navbar .wishlist-icon {
@@ -55,7 +59,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-/* Login/Signup Form */
+/* 🔐 Login/Signup Form */
 .auth-container {
   background-color: #fff9f9;
   padding: 2rem;
@@ -95,7 +99,7 @@ h1, h2 {
   background-color: #0056b3;
 }
 
-/* Search Bar */
+/* 🔍 Search Bar */
 .search-bar {
   width: 100%;
   padding: 12px;
@@ -105,14 +109,14 @@ h1, h2 {
   margin: 1rem 0;
 }
 
-/* Product Grid */
+/* 🛒 Product Grid */
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* Product Card */
+/* 🖼️ Product Card */
 .product-card {
   background-color: white;
   padding: 16px;
@@ -150,7 +154,7 @@ h1, h2 {
   font-size: 0.95rem;
 }
 
-/* Buttons Row */
+/* 🎛️ Buttons Row */
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -168,7 +172,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-/* Button Colors */
+/* 🎨 Button Colors */
 .add-btn {
   background-color: #28a745;
   color: white;
@@ -212,7 +216,7 @@ h1, h2 {
   background-color: #ffe6ea;
 }
 
-/* Wishlist Page */
+/* 💖 Wishlist Page */
 .wishlist-page {
   padding: 1rem;
   background-color: #ffffffea;
@@ -232,7 +236,8 @@ h1, h2 {
   font-size: 16px;
   margin-top: 1rem;
 }
-/* LOGIN PAGE STYLING */
+
+/* 🔐 LOGIN PAGE STYLING */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -282,7 +287,6 @@ h1, h2 {
   margin-top: 10px;
 }
 
-
 .signup-link {
   margin-top: 1rem;
   text-align: center;
@@ -295,7 +299,6 @@ h1, h2 {
 .signup-link a:hover {
   text-decoration: underline;
 }
-
 
 .signup-container {
   max-width: 400px;
@@ -332,8 +335,44 @@ h1, h2 {
   background-color: #0056b3;
 }
 
-.error-msg {
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+/* 🎨 Live Classes Styling */
+.live-classes-container {
+  text-align: center;
+  padding: 40px;
+  background: #fafafa;
+}
+
+.live-class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.live-class-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.live-class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.join-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #0056b3;
 }
